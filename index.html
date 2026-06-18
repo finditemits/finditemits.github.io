@@ -188,25 +188,25 @@
 
         <!-- Logo -->
         <a href="#" class="flex items-center group">
-          <div class="h-10 rounded-xl overflow-hidden ring-2 ring-white/30 shadow-lg group-hover:ring-white/60 transition-all duration-300">
-            <img src="Logo Fits.png" alt="FITS Logo" class="h-full w-auto object-contain bg-white px-2 py-1 rounded-xl" />
+          <div
+            class="h-10 rounded-xl overflow-hidden ring-2 ring-white/30 shadow-lg group-hover:ring-white/60 transition-all duration-300">
+            <img src="Logo Fits.png" alt="FITS Logo"
+              class="h-full w-auto object-contain bg-white px-2 py-1 rounded-xl" />
           </div>
         </a>
 
         <!-- Nav links -->
         <div class="hidden md:flex items-center gap-6">
           <a href="#dokumentasi"
-            class="text-sm font-medium text-blue-100 hover:text-white active:text-white border-b-2 border-transparent active:border-white pb-1 transition-colors">Dokumentasi</a>
-          <a href="#video"
-            class="text-sm font-medium text-blue-100 hover:text-white active:text-white border-b-2 border-transparent active:border-white pb-1 transition-colors">Video</a>
-          <a href="#fitur"
-            class="text-sm font-medium text-blue-100 hover:text-white active:text-white border-b-2 border-transparent active:border-white pb-1 transition-colors">Fitur</a>
-          <a href="#tim"
-            class="text-sm font-medium text-blue-100 hover:text-white active:text-white border-b-2 border-transparent active:border-white pb-1 transition-colors">Tim</a>
-          <a href="#dokumentasi"
-            class="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-white text-its-blue text-sm font-semibold border-2 border-white hover:bg-blue-50 active:border-its-blue-lt active:bg-white transition-colors shadow">
-            Lihat Dokumentasi
+            class="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-white text-its-blue text-sm font-semibold hover:bg-blue-50 hover:shadow-md transition-all duration-200 shadow">
+            Dokumentasi
           </a>
+          <a href="#tim"
+            class="nav-link text-sm font-medium text-white/80 hover:text-white border-b-2 border-transparent hover:border-white pb-0.5 transition-all duration-200">Tim</a>
+          <a href="#video"
+            class="nav-link text-sm font-medium text-white/80 hover:text-white border-b-2 border-transparent hover:border-white pb-0.5 transition-all duration-200">Video</a>
+          <a href="#fitur"
+            class="nav-link text-sm font-medium text-white/80 hover:text-white border-b-2 border-transparent hover:border-white pb-0.5 transition-all duration-200">Fitur</a>
         </div>
 
         <!-- Mobile menu toggle -->
@@ -224,13 +224,13 @@
       <!-- Mobile menu -->
       <div id="mobileMenu" class="hidden md:hidden pb-4 space-y-1">
         <a href="#dokumentasi"
-          class="block px-3 py-2 rounded-lg text-sm font-medium text-blue-100 hover:bg-white/10 hover:text-white transition-colors">Dokumentasi</a>
-        <a href="#video"
-          class="block px-3 py-2 rounded-lg text-sm font-medium text-blue-100 hover:bg-white/10 hover:text-white transition-colors">Video</a>
-        <a href="#fitur"
-          class="block px-3 py-2 rounded-lg text-sm font-medium text-blue-100 hover:bg-white/10 hover:text-white transition-colors">Fitur</a>
+          class="block px-3 py-2 rounded-lg text-sm font-semibold bg-white text-its-blue hover:bg-blue-50 transition-colors">Dokumentasi</a>
         <a href="#tim"
-          class="block px-3 py-2 rounded-lg text-sm font-medium text-blue-100 hover:bg-white/10 hover:text-white transition-colors">Tim</a>
+          class="block px-3 py-2 rounded-lg text-sm font-medium text-white/80 hover:bg-white/10 hover:text-white transition-colors">Tim</a>
+        <a href="#video"
+          class="block px-3 py-2 rounded-lg text-sm font-medium text-white/80 hover:bg-white/10 hover:text-white transition-colors">Video</a>
+        <a href="#fitur"
+          class="block px-3 py-2 rounded-lg text-sm font-medium text-white/80 hover:bg-white/10 hover:text-white transition-colors">Fitur</a>
       </div>
     </div>
   </nav>
@@ -264,7 +264,8 @@
           <!-- Hero title: FITS wordmark -->
           <div class="anim-el anim-hero" data-delay="180">
             <div class="inline-block rounded-2xl overflow-hidden shadow-2xl ring-4 ring-white/20 mb-4">
-              <img src="Logo Fits.png" alt="FITS" class="h-36 lg:h-44 xl:h-52 w-64 lg:w-80 xl:w-96 object-cover bg-white px-4 py-2" />
+              <img src="Logo Fits.png" alt="FITS"
+                class="h-36 lg:h-44 xl:h-52 w-64 lg:w-80 xl:w-96 object-cover bg-white px-4 py-2" />
             </div>
             <p class="block text-2xl lg:text-3xl font-semibold text-blue-100 leading-snug font-poppins">
               Helping Lost Things Find<br class="hidden sm:block" /> Their Way Home.
@@ -313,135 +314,205 @@
                     animation: magSearch 3.5s ease-in-out infinite;
                     transform-origin: 180px 260px;
                   }
+
                   @keyframes magSearch {
-                    0%   { transform: translate(-55px, -40px); }
-                    25%  { transform: translate(55px, -40px); }
-                    50%  { transform: translate(55px,  50px); }
-                    75%  { transform: translate(-55px, 50px); }
-                    100% { transform: translate(-55px, -40px); }
+                    0% {
+                      transform: translate(-55px, -40px);
+                    }
+
+                    25% {
+                      transform: translate(55px, -40px);
+                    }
+
+                    50% {
+                      transform: translate(55px, 50px);
+                    }
+
+                    75% {
+                      transform: translate(-55px, 50px);
+                    }
+
+                    100% {
+                      transform: translate(-55px, -40px);
+                    }
                   }
+
                   .mag-glow {
                     animation: glowPulse 3.5s ease-in-out infinite;
                   }
+
                   @keyframes glowPulse {
-                    0%, 100% { opacity: 0.25; r: 42; }
-                    50%      { opacity: 0.55; r: 48; }
+
+                    0%,
+                    100% {
+                      opacity: 0.25;
+                      r: 42;
+                    }
+
+                    50% {
+                      opacity: 0.55;
+                      r: 48;
+                    }
                   }
+
                   .scan-line {
                     animation: scanMove 3.5s ease-in-out infinite;
                   }
+
                   @keyframes scanMove {
-                    0%   { transform: translateY(0px);   opacity: 0.7; }
-                    50%  { transform: translateY(80px);  opacity: 0.4; }
-                    100% { transform: translateY(0px);   opacity: 0.7; }
+                    0% {
+                      transform: translateY(0px);
+                      opacity: 0.7;
+                    }
+
+                    50% {
+                      transform: translateY(80px);
+                      opacity: 0.4;
+                    }
+
+                    100% {
+                      transform: translateY(0px);
+                      opacity: 0.7;
+                    }
                   }
+
                   .item-found {
                     animation: foundPop 3.5s ease-in-out infinite;
                   }
+
                   @keyframes foundPop {
-                    0%, 60%, 100% { transform: scale(1);   opacity: 0.6; }
-                    70%           { transform: scale(1.25); opacity: 1;   }
-                    80%           { transform: scale(0.95); opacity: 0.9; }
-                    90%           { transform: scale(1.05); opacity: 1;   }
+
+                    0%,
+                    60%,
+                    100% {
+                      transform: scale(1);
+                      opacity: 0.6;
+                    }
+
+                    70% {
+                      transform: scale(1.25);
+                      opacity: 1;
+                    }
+
+                    80% {
+                      transform: scale(0.95);
+                      opacity: 0.9;
+                    }
+
+                    90% {
+                      transform: scale(1.05);
+                      opacity: 1;
+                    }
                   }
                 </style>
               </defs>
 
               <!-- Phone body -->
-              <rect x="60" y="20" width="240" height="480" rx="36" fill="white" fill-opacity="0.13" stroke="white" stroke-opacity="0.35" stroke-width="1.5"/>
-              <rect x="72" y="40" width="216" height="440" rx="24" fill="white" fill-opacity="0.07"/>
+              <rect x="60" y="20" width="240" height="480" rx="36" fill="white" fill-opacity="0.13" stroke="white"
+                stroke-opacity="0.35" stroke-width="1.5" />
+              <rect x="72" y="40" width="216" height="440" rx="24" fill="white" fill-opacity="0.07" />
 
               <!-- Notch -->
-              <rect x="130" y="26" width="100" height="18" rx="9" fill="white" fill-opacity="0.13"/>
+              <rect x="130" y="26" width="100" height="18" rx="9" fill="white" fill-opacity="0.13" />
 
               <!-- Status bar -->
-              <rect x="90" y="56" width="70" height="5" rx="2.5" fill="white" fill-opacity="0.35"/>
-              <rect x="272" y="56" width="20" height="5" rx="2.5" fill="white" fill-opacity="0.35"/>
+              <rect x="90" y="56" width="70" height="5" rx="2.5" fill="white" fill-opacity="0.35" />
+              <rect x="254" y="56" width="20" height="5" rx="2.5" fill="white" fill-opacity="0.35" />
 
               <!-- App header -->
-              <rect x="90" y="74" width="56" height="9" rx="4.5" fill="white"/>
-              <rect x="90" y="89" width="38" height="6" rx="3" fill="white" fill-opacity="0.45"/>
+              <rect x="90" y="74" width="56" height="9" rx="4.5" fill="white" />
+              <rect x="90" y="89" width="38" height="6" rx="3" fill="white" fill-opacity="0.45" />
               <!-- Bell icon -->
-              <circle cx="282" cy="82" r="10" fill="white" fill-opacity="0.15"/>
-              <path d="M278 82 a4 4 0 0 1 8 0 v3 l2 2 h-12 l2-2 v-3Z" fill="white" fill-opacity="0.7"/>
+              <circle cx="263.5" cy="82" r="10" fill="white" fill-opacity="0.15" />
+              <path d="M260 82 a4 4 0 0 1 8 0 v3 l2 2 h-12 l2-2 v-3Z" fill="white" fill-opacity="0.7" />
 
               <!-- Search bar -->
-              <rect x="90" y="108" width="180" height="30" rx="10" fill="white" fill-opacity="0.15" stroke="white" stroke-opacity="0.25" stroke-width="1"/>
-              <circle cx="107" cy="123" r="5.5" stroke="white" stroke-opacity="0.7" stroke-width="1.5"/>
-              <line x1="111" y1="127" x2="115" y2="131" stroke="white" stroke-opacity="0.7" stroke-width="1.5" stroke-linecap="round"/>
-              <rect x="122" y="119" width="90" height="8" rx="4" fill="white" fill-opacity="0.25"/>
+              <rect x="90" y="108" width="180" height="30" rx="10" fill="white" fill-opacity="0.15" stroke="white"
+                stroke-opacity="0.25" stroke-width="1" />
+              <circle cx="107" cy="123" r="5.5" stroke="white" stroke-opacity="0.7" stroke-width="1.5" />
+              <line x1="111" y1="127" x2="115" y2="131" stroke="white" stroke-opacity="0.7" stroke-width="1.5"
+                stroke-linecap="round" />
+              <rect x="122" y="119" width="90" height="8" rx="4" fill="white" fill-opacity="0.25" />
 
               <!-- Items list area background -->
-              <rect x="90" y="150" width="180" height="270" rx="14" fill="white" fill-opacity="0.06"/>
+              <rect x="90" y="150" width="180" height="270" rx="14" fill="white" fill-opacity="0.06" />
 
               <!-- Item row 1 -->
-              <rect x="98" y="160" width="164" height="52" rx="10" fill="white" fill-opacity="0.12" stroke="white" stroke-opacity="0.15" stroke-width="1"/>
-              <rect x="108" y="170" width="32" height="32" rx="8" fill="#0EA5E9" fill-opacity="0.6"/>
-              <rect x="148" y="172" width="70" height="7" rx="3.5" fill="white"/>
-              <rect x="148" y="184" width="50" height="5" rx="2.5" fill="white" fill-opacity="0.45"/>
-              <rect x="148" y="194" width="38" height="12" rx="6" fill="#22C55E" fill-opacity="0.5"/>
+              <rect x="98" y="160" width="164" height="52" rx="10" fill="white" fill-opacity="0.12" stroke="white"
+                stroke-opacity="0.15" stroke-width="1" />
+              <rect x="108" y="170" width="32" height="32" rx="8" fill="#0EA5E9" fill-opacity="0.6" />
+              <rect x="148" y="172" width="70" height="7" rx="3.5" fill="white" />
+              <rect x="148" y="184" width="50" height="5" rx="2.5" fill="white" fill-opacity="0.45" />
+              <rect x="148" y="194" width="38" height="12" rx="6" fill="#22C55E" fill-opacity="0.5" />
               <!-- backpack icon -->
-              <path d="M114 178 a6 5 0 0 1 12 0 v2 h-12v-2Z M118 176 h4" stroke="white" stroke-width="1.3" stroke-linecap="round" fill="none"/>
-              <rect x="112" y="180" width="12" height="10" rx="2" fill="white" fill-opacity="0.5"/>
+              <path d="M112 178 a6 5 0 0 1 12 0 v2 h-12v-2Z M116 176 h4" stroke="white" stroke-width="1.3"
+                stroke-linecap="round" fill="none" />
+              <rect x="112" y="180" width="12" height="10" rx="2" fill="white" fill-opacity="0.5" />
 
               <!-- Item row 2 -->
-              <rect x="98" y="220" width="164" height="52" rx="10" fill="white" fill-opacity="0.12" stroke="white" stroke-opacity="0.15" stroke-width="1"/>
-              <rect x="108" y="230" width="32" height="32" rx="8" fill="#8B5CF6" fill-opacity="0.6"/>
-              <rect x="148" y="232" width="80" height="7" rx="3.5" fill="white"/>
-              <rect x="148" y="244" width="55" height="5" rx="2.5" fill="white" fill-opacity="0.45"/>
-              <rect x="148" y="254" width="44" height="12" rx="6" fill="#F59E0B" fill-opacity="0.5"/>
+              <rect x="98" y="220" width="164" height="52" rx="10" fill="white" fill-opacity="0.12" stroke="white"
+                stroke-opacity="0.15" stroke-width="1" />
+              <rect x="108" y="230" width="32" height="32" rx="8" fill="#8B5CF6" fill-opacity="0.6" />
+              <rect x="148" y="232" width="80" height="7" rx="3.5" fill="white" />
+              <rect x="148" y="244" width="55" height="5" rx="2.5" fill="white" fill-opacity="0.45" />
+              <rect x="148" y="254" width="44" height="12" rx="6" fill="#F59E0B" fill-opacity="0.5" />
               <!-- phone icon -->
-              <rect x="114" y="232" width="9" height="15" rx="2" fill="white" fill-opacity="0.7"/>
+              <rect x="114" y="232" width="9" height="15" rx="2" fill="white" fill-opacity="0.7" />
 
               <!-- Item row 3 (found — highlighted) -->
-              <rect x="98" y="280" width="164" height="52" rx="10" fill="#0EA5E9" fill-opacity="0.22" stroke="#0EA5E9" stroke-opacity="0.5" stroke-width="1.5"/>
-              <rect x="108" y="290" width="32" height="32" rx="8" fill="#0EA5E9" fill-opacity="0.7"/>
-              <rect x="148" y="292" width="65" height="7" rx="3.5" fill="white"/>
-              <rect x="148" y="304" width="46" height="5" rx="2.5" fill="white" fill-opacity="0.45"/>
-              <rect x="148" y="314" width="52" height="12" rx="6" fill="#22C55E" fill-opacity="0.7"/>
+              <rect x="98" y="280" width="164" height="52" rx="10" fill="#0EA5E9" fill-opacity="0.22" stroke="#0EA5E9"
+                stroke-opacity="0.5" stroke-width="1.5" />
+              <rect x="108" y="290" width="32" height="32" rx="8" fill="#0EA5E9" fill-opacity="0.7" />
+              <rect x="148" y="292" width="65" height="7" rx="3.5" fill="white" />
+              <rect x="148" y="304" width="46" height="5" rx="2.5" fill="white" fill-opacity="0.45" />
+              <rect x="148" y="314" width="52" height="12" rx="6" fill="#22C55E" fill-opacity="0.7" />
               <!-- key icon -->
-              <circle cx="117" cy="299" r="5" stroke="white" stroke-width="1.5" fill="none"/>
-              <line x1="122" y1="299" x2="130" y2="299" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
-              <line x1="128" y1="299" x2="128" y2="302" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+              <circle cx="117" cy="299" r="5" stroke="white" stroke-width="1.5" fill="none" />
+              <line x1="122" y1="299" x2="130" y2="299" stroke="white" stroke-width="1.5" stroke-linecap="round" />
+              <line x1="128" y1="299" x2="128" y2="302" stroke="white" stroke-width="1.5" stroke-linecap="round" />
 
               <!-- Item row 4 -->
-              <rect x="98" y="340" width="164" height="52" rx="10" fill="white" fill-opacity="0.12" stroke="white" stroke-opacity="0.15" stroke-width="1"/>
-              <rect x="108" y="350" width="32" height="32" rx="8" fill="#F59E0B" fill-opacity="0.6"/>
-              <rect x="148" y="352" width="72" height="7" rx="3.5" fill="white"/>
-              <rect x="148" y="364" width="48" height="5" rx="2.5" fill="white" fill-opacity="0.45"/>
+              <rect x="98" y="340" width="164" height="52" rx="10" fill="white" fill-opacity="0.12" stroke="white"
+                stroke-opacity="0.15" stroke-width="1" />
+              <rect x="108" y="350" width="32" height="32" rx="8" fill="#F59E0B" fill-opacity="0.6" />
+              <rect x="148" y="352" width="72" height="7" rx="3.5" fill="white" />
+              <rect x="148" y="364" width="48" height="5" rx="2.5" fill="white" fill-opacity="0.45" />
               <!-- wallet icon -->
-              <rect x="111" y="352" width="14" height="11" rx="2" fill="white" fill-opacity="0.5"/>
-              <rect x="119" y="355" width="6" height="5" rx="1.5" fill="white" fill-opacity="0.8"/>
+              <rect x="111" y="352" width="14" height="11" rx="2" fill="white" fill-opacity="0.5" />
+              <rect x="119" y="355" width="6" height="5" rx="1.5" fill="white" fill-opacity="0.8" />
 
               <!-- Bottom nav bar -->
-              <rect x="72" y="436" width="216" height="44" rx="0" fill="white" fill-opacity="0.08"/>
-              <rect x="72" y="436" width="216" height="1" fill="white" fill-opacity="0.15"/>
-              <circle cx="126" cy="458" r="12" fill="white" fill-opacity="0.25"/>
-              <circle cx="180" cy="458" r="12" fill="white" fill-opacity="0.12"/>
-              <circle cx="234" cy="458" r="12" fill="white" fill-opacity="0.12"/>
+              <rect x="72" y="436" width="216" height="44" rx="0" fill="white" fill-opacity="0.08" />
+              <rect x="72" y="436" width="216" height="1" fill="white" fill-opacity="0.15" />
+              <circle cx="126" cy="458" r="12" fill="white" fill-opacity="0.25" />
+              <circle cx="180" cy="458" r="12" fill="white" fill-opacity="0.12" />
+              <circle cx="234" cy="458" r="12" fill="white" fill-opacity="0.12" />
               <!-- home icon active -->
-              <path d="M120 461 l6-7 6 7 v6 h-4v-3h-4v3h-4v-6Z" fill="white" fill-opacity="0.85"/>
+              <path d="M120 458 l6-7 6 7 v6 h-4v-3h-4v3h-4v-6Z" fill="white" fill-opacity="0.85" />
 
               <!-- ═══ MAGNIFIER GROUP — animated ═══ -->
               <g class="mag-group">
                 <!-- glow behind lens -->
-                <circle class="mag-glow" cx="180" cy="258" r="42" fill="#0EA5E9" fill-opacity="0.18"/>
+                <circle class="mag-glow" cx="180" cy="258" r="42" fill="#0EA5E9" fill-opacity="0.18" />
                 <!-- lens -->
-                <circle cx="180" cy="258" r="36" fill="white" fill-opacity="0.12" stroke="white" stroke-width="3"/>
-                <circle cx="180" cy="258" r="36" fill="none" stroke="#0EA5E9" stroke-width="2.5" stroke-opacity="0.8"/>
+                <circle cx="180" cy="258" r="36" fill="white" fill-opacity="0.12" stroke="white" stroke-width="3" />
+                <circle cx="180" cy="258" r="36" fill="none" stroke="#0EA5E9" stroke-width="2.5" stroke-opacity="0.8" />
                 <!-- inner lens glare -->
-                <circle cx="168" cy="246" r="8" fill="white" fill-opacity="0.12"/>
+                <circle cx="168" cy="246" r="8" fill="white" fill-opacity="0.12" />
                 <!-- scan line inside lens -->
-                <line class="scan-line" x1="150" y1="255" x2="210" y2="255" stroke="#0EA5E9" stroke-width="1.5" stroke-opacity="0.75" stroke-linecap="round"/>
+                <line class="scan-line" x1="150" y1="255" x2="210" y2="255" stroke="#0EA5E9" stroke-width="1.5"
+                  stroke-opacity="0.75" stroke-linecap="round" />
                 <!-- handle -->
-                <line x1="207" y1="285" x2="228" y2="308" stroke="white" stroke-width="5" stroke-linecap="round"/>
-                <line x1="207" y1="285" x2="228" y2="308" stroke="#0EA5E9" stroke-width="2.5" stroke-linecap="round" stroke-opacity="0.6"/>
+                <line x1="207" y1="285" x2="228" y2="308" stroke="white" stroke-width="5" stroke-linecap="round" />
+                <line x1="207" y1="285" x2="228" y2="308" stroke="#0EA5E9" stroke-width="2.5" stroke-linecap="round"
+                  stroke-opacity="0.6" />
               </g>
 
               <!-- Found checkmark badge (pulses when magnifier is at row 3) -->
               <g class="item-found" style="transform-origin:262px 298px">
-                <circle cx="262" cy="298" r="14" fill="#22C55E"/>
-                <polyline points="255,298 260,304 270,291" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                <circle cx="262" cy="298" r="14" fill="#22C55E" />
+                <polyline points="255,298 260,304 270,291" stroke="white" stroke-width="2.5" stroke-linecap="round"
+                  stroke-linejoin="round" fill="none" />
               </g>
             </svg>
           </div>
@@ -455,6 +526,104 @@
       <svg viewBox="0 0 1440 80" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
         <path d="M0 80 L0 40 Q360 0 720 40 Q1080 80 1440 40 L1440 80 Z" fill="white" />
       </svg>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════════════
+     ABOUT / TEAM
+═══════════════════════════════════════════════════ -->
+  <section id="tim" class="section-bg py-20 lg:py-28">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+
+      <!-- Header -->
+      <div class="text-center mb-14">
+        <div
+          class="anim-el anim-left inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-its-soft border border-blue-200 text-its-blue text-xs font-semibold uppercase tracking-wider mb-4"
+          data-delay="0">
+          Tim
+        </div>
+        <h2 class="anim-el font-poppins font-bold text-3xl lg:text-4xl text-gray-900 mb-4" data-delay="120">
+          Disusun Oleh
+        </h2>
+        <p class="anim-el text-gray-500 max-w-md mx-auto text-base" data-delay="240">
+          Mahasiswa Sistem Informasi ITS yang berdedikasi untuk menciptakan solusi digital yang berdampak nyata.
+        </p>
+      </div>
+
+      <div class="flex flex-wrap justify-center gap-6">
+
+        <!-- Member 1 -->
+        <div
+          class="anim-scale bg-white rounded-2xl p-6 card-shadow card-shadow-hover transition-all duration-300 hover:-translate-y-1 flex flex-col items-center text-center gap-3 w-44"
+          data-delay="0">
+          <div
+            class="w-16 h-16 rounded-2xl bg-gradient-to-br from-its-blue to-its-blue-lt flex items-center justify-center text-white font-poppins font-bold text-xl">
+            PA
+          </div>
+          <div>
+            <p class="font-poppins font-semibold text-gray-900 text-sm leading-snug">Pasha Avatar Ardan</p>
+            <p class="text-its-blue text-xs font-medium mt-1">FITS Team</p>
+          </div>
+        </div>
+
+        <!-- Member 2 -->
+        <div
+          class="anim-scale bg-white rounded-2xl p-6 card-shadow card-shadow-hover transition-all duration-300 hover:-translate-y-1 flex flex-col items-center text-center gap-3 w-44"
+          data-delay="100">
+          <div
+            class="w-16 h-16 rounded-2xl bg-gradient-to-br from-indigo-500 to-blue-600 flex items-center justify-center text-white font-poppins font-bold text-xl">
+            NA
+          </div>
+          <div>
+            <p class="font-poppins font-semibold text-gray-900 text-sm leading-snug">Naufal Aghni Muhammad</p>
+            <p class="text-its-blue text-xs font-medium mt-1">FITS Team</p>
+          </div>
+        </div>
+
+        <!-- Member 3 -->
+        <div
+          class="anim-scale bg-white rounded-2xl p-6 card-shadow card-shadow-hover transition-all duration-300 hover:-translate-y-1 flex flex-col items-center text-center gap-3 w-44"
+          data-delay="200">
+          <div
+            class="w-16 h-16 rounded-2xl bg-gradient-to-br from-sky-500 to-cyan-600 flex items-center justify-center text-white font-poppins font-bold text-xl">
+            AR
+          </div>
+          <div>
+            <p class="font-poppins font-semibold text-gray-900 text-sm leading-snug">Alwida Rahmat</p>
+            <p class="text-its-blue text-xs font-medium mt-1">FITS Team</p>
+          </div>
+        </div>
+
+        <!-- Member 4 -->
+        <div
+          class="anim-scale bg-white rounded-2xl p-6 card-shadow card-shadow-hover transition-all duration-300 hover:-translate-y-1 flex flex-col items-center text-center gap-3 w-44"
+          data-delay="300">
+          <div
+            class="w-16 h-16 rounded-2xl bg-gradient-to-br from-blue-600 to-its-blue flex items-center justify-center text-white font-poppins font-bold text-xl">
+            FL
+          </div>
+          <div>
+            <p class="font-poppins font-semibold text-gray-900 text-sm leading-snug">Fabio Andrea Liui</p>
+            <p class="text-its-blue text-xs font-medium mt-1">FITS Team</p>
+          </div>
+        </div>
+
+        <!-- Member 5 -->
+        <div
+          class="anim-scale bg-white rounded-2xl p-6 card-shadow card-shadow-hover transition-all duration-300 hover:-translate-y-1 flex flex-col items-center text-center gap-3 w-44"
+          data-delay="400">
+          <div
+            class="w-16 h-16 rounded-2xl bg-gradient-to-br from-violet-500 to-purple-700 flex items-center justify-center text-white font-poppins font-bold text-xl">
+            MA
+          </div>
+          <div>
+            <p class="font-poppins font-semibold text-gray-900 text-sm leading-snug">Miftahul Arifin Sofyan</p>
+            <p class="text-its-blue text-xs font-medium mt-1">FITS Team</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 
@@ -644,7 +813,7 @@
           class="anim-el card-disabled bg-white rounded-2xl p-7 border border-gray-100 card-shadow flex flex-col relative overflow-hidden w-full md:w-80"
           data-delay="140" aria-label="Hi-Fi - sedang dalam pengerjaan">
           <div class="absolute top-4 right-4">
-            
+
           </div>
           <div
             class="w-12 h-12 rounded-xl bg-gradient-to-br from-orange-50 to-amber-100 flex items-center justify-center mb-5">
@@ -677,7 +846,7 @@
           </div>
         </div>
 
-        
+
 
       </div>
     </div>
@@ -891,104 +1060,6 @@
 
 
   <!-- ═══════════════════════════════════════════════════
-     ABOUT / TEAM
-═══════════════════════════════════════════════════ -->
-  <section id="tim" class="section-bg py-20 lg:py-28">
-    <div class="max-w-7xl mx-auto px-6 lg:px-8">
-
-      <!-- Header -->
-      <div class="text-center mb-14">
-        <div
-          class="anim-el anim-left inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-its-soft border border-blue-200 text-its-blue text-xs font-semibold uppercase tracking-wider mb-4"
-          data-delay="0">
-          Tim
-        </div>
-        <h2 class="anim-el font-poppins font-bold text-3xl lg:text-4xl text-gray-900 mb-4" data-delay="120">
-          Disusun Oleh
-        </h2>
-        <p class="anim-el text-gray-500 max-w-md mx-auto text-base" data-delay="240">
-          Mahasiswa Sistem Informasi ITS yang berdedikasi untuk menciptakan solusi digital yang berdampak nyata.
-        </p>
-      </div>
-
-      <div class="flex flex-wrap justify-center gap-6">
-
-        <!-- Member 1 -->
-        <div
-          class="anim-scale bg-white rounded-2xl p-6 card-shadow card-shadow-hover transition-all duration-300 hover:-translate-y-1 flex flex-col items-center text-center gap-3 w-44"
-          data-delay="0">
-          <div
-            class="w-16 h-16 rounded-2xl bg-gradient-to-br from-its-blue to-its-blue-lt flex items-center justify-center text-white font-poppins font-bold text-xl">
-            PA
-          </div>
-          <div>
-            <p class="font-poppins font-semibold text-gray-900 text-sm leading-snug">Pasha Avatar Ardan</p>
-            <p class="text-its-blue text-xs font-medium mt-1">FITS Team</p>
-          </div>
-        </div>
-
-        <!-- Member 2 -->
-        <div
-          class="anim-scale bg-white rounded-2xl p-6 card-shadow card-shadow-hover transition-all duration-300 hover:-translate-y-1 flex flex-col items-center text-center gap-3 w-44"
-          data-delay="100">
-          <div
-            class="w-16 h-16 rounded-2xl bg-gradient-to-br from-indigo-500 to-blue-600 flex items-center justify-center text-white font-poppins font-bold text-xl">
-            NA
-          </div>
-          <div>
-            <p class="font-poppins font-semibold text-gray-900 text-sm leading-snug">Naufal Aghni Muhammad</p>
-            <p class="text-its-blue text-xs font-medium mt-1">FITS Team</p>
-          </div>
-        </div>
-
-        <!-- Member 3 -->
-        <div
-          class="anim-scale bg-white rounded-2xl p-6 card-shadow card-shadow-hover transition-all duration-300 hover:-translate-y-1 flex flex-col items-center text-center gap-3 w-44"
-          data-delay="200">
-          <div
-            class="w-16 h-16 rounded-2xl bg-gradient-to-br from-sky-500 to-cyan-600 flex items-center justify-center text-white font-poppins font-bold text-xl">
-            AR
-          </div>
-          <div>
-            <p class="font-poppins font-semibold text-gray-900 text-sm leading-snug">Alwida Rahmat</p>
-            <p class="text-its-blue text-xs font-medium mt-1">FITS Team</p>
-          </div>
-        </div>
-
-        <!-- Member 4 -->
-        <div
-          class="anim-scale bg-white rounded-2xl p-6 card-shadow card-shadow-hover transition-all duration-300 hover:-translate-y-1 flex flex-col items-center text-center gap-3 w-44"
-          data-delay="300">
-          <div
-            class="w-16 h-16 rounded-2xl bg-gradient-to-br from-blue-600 to-its-blue flex items-center justify-center text-white font-poppins font-bold text-xl">
-            FL
-          </div>
-          <div>
-            <p class="font-poppins font-semibold text-gray-900 text-sm leading-snug">Fabio Andrea Liui</p>
-            <p class="text-its-blue text-xs font-medium mt-1">FITS Team</p>
-          </div>
-        </div>
-
-        <!-- Member 5 -->
-        <div
-          class="anim-scale bg-white rounded-2xl p-6 card-shadow card-shadow-hover transition-all duration-300 hover:-translate-y-1 flex flex-col items-center text-center gap-3 w-44"
-          data-delay="400">
-          <div
-            class="w-16 h-16 rounded-2xl bg-gradient-to-br from-violet-500 to-purple-700 flex items-center justify-center text-white font-poppins font-bold text-xl">
-            MA
-          </div>
-          <div>
-            <p class="font-poppins font-semibold text-gray-900 text-sm leading-snug">Miftahul Arifin Sofyan</p>
-            <p class="text-its-blue text-xs font-medium mt-1">FITS Team</p>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-
-  <!-- ═══════════════════════════════════════════════════
      FOOTER
 ═══════════════════════════════════════════════════ -->
   <footer class="hero-bg py-12">
@@ -1058,8 +1129,13 @@
       let current = '';
       sections.forEach(s => { if (window.scrollY >= s.offsetTop - 88) current = s.id; });
       navLinks.forEach(l => {
-        l.classList.remove('text-its-blue', 'font-semibold');
-        if (l.getAttribute('href') === `#${current}`) l.classList.add('text-its-blue', 'font-semibold');
+        if (!l.classList.contains('nav-link')) return;
+        l.classList.remove('text-white', 'font-semibold', 'border-white');
+        l.classList.add('border-transparent');
+        if (l.getAttribute('href') === `#${current}`) {
+          l.classList.remove('border-transparent');
+          l.classList.add('text-white', 'font-semibold', 'border-white');
+        }
       });
     }, { passive: true });
 
