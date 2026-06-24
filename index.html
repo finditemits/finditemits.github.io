@@ -1141,12 +1141,13 @@
 
         <!-- ── Kanan: Poster ── -->
         <div id="poster" class="anim-el flex flex-col gap-4 items-center" data-delay="340">
-          <div class="flex items-center gap-2 w-full">
-            <div class="w-1 h-5 rounded-full bg-its-blue flex-shrink-0"></div>
-            <p class="font-poppins font-semibold text-gray-800 text-sm">Poster FITS</p>
-          </div>
+          <div class="flex flex-col gap-4 w-full max-w-xs lg:max-w-sm">
+            <div class="flex items-center gap-2">
+              <div class="w-1 h-5 rounded-full bg-its-blue flex-shrink-0"></div>
+              <p class="font-poppins font-semibold text-gray-800 text-sm">Poster FITS</p>
+            </div>
 
-          <div class="relative group cursor-zoom-in rounded-2xl overflow-hidden card-shadow card-shadow-hover transition-all duration-300 hover:-translate-y-1 w-full max-w-xs lg:max-w-sm"
+          <div class="relative group cursor-zoom-in rounded-2xl overflow-hidden card-shadow card-shadow-hover transition-all duration-300 hover:-translate-y-1 w-full"
             onclick="posterLightboxOpen()">
             <img src="Poster_FITS.jpg" alt="Poster FITS" class="w-full h-auto object-contain select-none" draggable="false" />
             <div class="absolute inset-0 bg-black/0 group-hover:bg-black/15 transition-colors duration-300 flex items-center justify-center">
@@ -1154,6 +1155,7 @@
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#003F88" stroke-width="2" stroke-linecap="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
               </div>
             </div>
+          </div>
           </div>
 
           <a href="Poster_FITS.jpg" target="_blank" rel="noopener"
